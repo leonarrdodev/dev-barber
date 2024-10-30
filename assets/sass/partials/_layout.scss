@@ -24,7 +24,6 @@
 }
 
 // Hero
-
 .hero{
     color: $white-normal;
     min-height: 80vh;
@@ -77,9 +76,51 @@
 
 @media screen and (max-width: 480px){
     .hero{
+        min-height: 40vh;
         h1{
             font-size: 24px;
         }
     }
     
+}
+
+//About
+.about{
+    background-color: $primary-normal;
+    overflow: hidden;
+    color: $white-normal;
+    .about-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        img{
+            max-width: 570px;
+        }
+        div{
+            flex: 1;
+        }
+        .about-description{
+            h2{
+                font-size: 38px;
+                margin-bottom: 24px;
+            }
+            p{
+                margin-bottom: 14px;
+                line-height: 120%;
+                text-align: justify;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .about-content{
+        display: flex;
+        flex-direction: column;
+        h2{
+            text-align: center;
+            margin-top: 14px;
+        }
+    }
 }

@@ -144,8 +144,48 @@ header .header-button:hover {
   }
 }
 @media screen and (max-width: 480px) {
+  .hero {
+    min-height: 40vh;
+  }
   .hero h1 {
     font-size: 24px;
+  }
+}
+.about {
+  background-color: #06121e;
+  overflow: hidden;
+  color: #fff;
+}
+.about .about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+.about .about-content img {
+  max-width: 570px;
+}
+.about .about-content div {
+  flex: 1;
+}
+.about .about-content .about-description h2 {
+  font-size: 38px;
+  margin-bottom: 24px;
+}
+.about .about-content .about-description p {
+  margin-bottom: 14px;
+  line-height: 120%;
+  text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+  .about-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-content h2 {
+    text-align: center;
+    margin-top: 14px;
   }
 }
 body {
