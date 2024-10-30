@@ -4,12 +4,30 @@
     box-sizing: border-box;
     outline: 0;
 }
-
-@import "./variables/colors/colors.scss";
-
+@import "./variables/colors/_colors.scss";
+@import "./partials/_header.scss";
+@import "./partials/layout"; 
 body{
     font-family: 'Sora', sans-serif;
     width: 100%;
     height: 100vh;
     background-color: $primary-normal;
+}
+
+button{
+    font-family: 'Sora', sans-serif;
+    cursor: pointer;
+}
+
+svg{
+    width: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
 }
