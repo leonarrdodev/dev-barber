@@ -6,7 +6,9 @@
 }
 @import "./variables/colors/_colors.scss";
 @import "./partials/_header.scss";
-@import "./partials/layout"; 
+@import "./partials/_layout"; 
+@import "./partials/_footer";
+
 body{
     font-family: 'Sora', sans-serif;
     width: 100%;
