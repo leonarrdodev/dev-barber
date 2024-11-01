@@ -263,6 +263,50 @@ header .header-button:hover {
     margin-top: 24px;
   }
 }
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 36px;
+  margin: 48px 0;
+}
+.footer .footer-icons {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+}
+.footer .footer-icons i {
+  color: #fff;
+}
+.footer .footer-icons a:hover i {
+  animation: translateY 0.8s infinite alternate;
+  color: #d34040;
+}
+.footer .footer-logo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.footer .footer-logo img {
+  width: 240px;
+}
+.footer p {
+  color: #fff;
+  margin-bottom: 36px;
+}
+
+@media screen and (max-width: 500px) {
+  .footer-logo img {
+    width: 160px;
+  }
+  .footer {
+    padding: 0 14px;
+  }
+  .footer p {
+    text-align: center;
+  }
+}
 body {
   font-family: "Sora", sans-serif;
   width: 100%;

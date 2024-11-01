@@ -1,0 +1,50 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 36px;
+    margin: 48px 0;
+    .footer-icons{
+        display: flex;
+        gap: 14px;
+        justify-content: center;
+        i{
+            color: $white-normal;
+        }
+    }
+    
+    .footer-icons a:hover{
+        i{
+            animation: translateY 0.8s infinite alternate;
+            color: $red-light;
+        }
+    }
+    
+    .footer-logo{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        img{
+            width: 240px;
+        }
+    }
+    p{
+        color: $white-normal;
+        margin-bottom: 36px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .footer-logo{
+        img{
+            width: 160px;
+        }
+    }
+    .footer{
+        padding: 0 14px;
+        p{
+            text-align: center;
+        }
+    }
+}
